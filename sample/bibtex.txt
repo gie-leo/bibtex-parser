@@ -1,0 +1,16 @@
+@article{apa_entry_1,
+  author = {Gandhi, Akanksha, & Oelmüller, Ralf},
+  title = {Emerging Roles of Receptor-like Protein Kinases in Plant Response to Abiotic Stresses},
+  journal = {International Journal of Molecular Sciences},
+  year = {2023},
+  volume = {24},
+  number = {19},
+  pages = {14762},
+  doi = {10.3390/ijms241914762},
+  url = {https://doi.org/10.3390/ijms241914762}
+}
+
+% Konnte nicht automatisch verarbeitet werden: Gerstmeier, Jana (2015). On the assembly of the leukotriene biosynthetic complex in intact cells and its pharmacological inhibition. https://nbn-resolving.org/urn:nbn:de:gbv:27-20151021-172821-0
+
+% Konnte nicht automatisch verarbeitet werden: Sánchez-Carbonell, M., Jiménez Peinado, P., Bayer-Kaufmann, C., Hennings, J.-C., Hofmann, Y., Schmidt, S., Witte, O. W., & Urbach, A. (2023). Effect of methanol fixation on single-cell RNA sequencing of the murine dentate gyrus. Frontiers in Molecular Neuroscience, 16, Article 1223798. https://doi.org/10.3389/fnmol.2023.1223798
+

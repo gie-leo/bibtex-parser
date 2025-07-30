@@ -7,8 +7,9 @@ def apa_to_bibtex(entry, citekey):
     match = re.match(
         r"^(.*?)\s+\((\d{4})\)\.\s+(.*?)\.\s+(\*?)([^*]+)(\*?),\s+(\d+)\((\d+)\),\s+(Article\s+)?(\w+)\.\s+(https?://doi\.org/\S+)",
         entry
+
     )
-    
+
     if not match:
         # Wenn keine Übereinstimmung, gib eine Kommentarzeile zurück
         return f"% Konnte nicht automatisch verarbeitet werden: {entry}\n"
@@ -36,14 +37,21 @@ def apa_to_bibtex(entry, citekey):
 
 #real work starts here; apa-zitate aus Datei werden umgewandelt und als bibtex-Datei abgespeichert
 def process_apa_file(input_file, output_file):
+    print('start') # debug
     with open(input_file, "r", encoding="utf-8") as f:
+        print('Inputfile opened') # debug
         #alle belegten zeilen sollen gelesen werden
         lines = [line.strip() for line in f if line.strip()]
 
     with open(output_file, "w", encoding="utf-8") as out:
+        print('Outputfile opened') # Debug
         for i, line in enumerate(lines):
+            print(i)
             citekey = f"apa_entry_{i+1}"
             bib = apa_to_bibtex(line, citekey)
             out.write(bib + "\n")
 
     print(f"✔️ {len(lines)} APA-Zitation(en) verarbeitet und gespeichert in: {output_file}")
+
+# Funktion aufrufen
+process_apa_file("sample/apa-zitate.txt", "sample/bibtex.txt")
