@@ -54,4 +54,4 @@ def process_apa_file(input_file, output_file):
     print(f"✔️ {len(lines)} APA-Zitation(en) verarbeitet und gespeichert in: {output_file}")
 
 # Funktion aufrufen
-process_apa_file("sample/apa-zitate.txt", "sample/bibtex.txt")
+process_apa_file("sample/apa-zitate.txt", "sample/bibtex.bib")
