@@ -1,7 +1,7 @@
 # bibtex-parser
 WIP script to turn apa citation lists into bibtex entries for data-import without IDs
 
-#how-to:
+how-to:
 1. create apa_zitate.txt (with a few citations, one per line!)
 2. run script
 3. ???
